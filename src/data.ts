@@ -57,18 +57,26 @@ export const projects: Project[] = [
 export const skillGroups: SkillGroup[] = [
   {
     label: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "React Router",
+      "Redux",
+      "Context API",
+    ],
+  },
+  {
+    label: "Styling",
+    items: ["Tailwind CSS", "Bootstrap", "Sass"],
   },
   {
     label: "Backend",
     items: ["Node.js", "Express", "REST APIs"],
   },
   {
-    label: "Database",
-    items: ["MongoDB", "PostgreSQL"],
-  },
-  {
-    label: "Tooling",
-    items: ["Git", "Vitest", "Vercel"],
+    label: "Database & Tools",
+    items: ["MongoDB", "PostgreSQL", "Git", "Vitest", "Vercel"],
   },
 ];
