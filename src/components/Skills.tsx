@@ -7,28 +7,26 @@ export default function Skills() {
   const ref = useReveal<HTMLDivElement>();
 
   return (
-    <section id="skills" className="border-t border-[var(--line)] py-20 sm:py-28">
+    <section id="skills" className="border-t border-[var(--line)] py-20 sm:py-24">
       <div className="container">
-        <p className="eyebrow mb-5">
-          <span className="index-num mr-2">03</span>Skills
-        </p>
-        <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-          Tools I build with
+        <p className="eyebrow mb-4">Skills</p>
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+          Technical skills
         </h2>
 
-        <div ref={ref} className="reveal mt-10 grid gap-px overflow-hidden border border-[var(--line)] sm:grid-cols-2 lg:grid-cols-4" style={{ background: "var(--line)" }}>
+        <div ref={ref} className="reveal mt-10 flex flex-col gap-4">
           {skillGroups.map((group) => (
-            <div key={group.label} className="p-6" style={{ background: "var(--bg)" }}>
-              <h3 className="font-mono text-[12px] font-semibold uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+            <div key={group.label} className="flex flex-col gap-2 border-b border-[var(--line)] pb-4 last:border-b-0 sm:flex-row sm:items-center sm:gap-6">
+              <span className="w-[110px] shrink-0 text-[13px] font-semibold text-[var(--ink-soft)]">
                 {group.label}
-              </h3>
-              <ul className="mt-4 flex flex-col gap-2.5">
+              </span>
+              <div className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
-                  <li key={item} className="text-[14.5px] font-medium text-[var(--ink)]">
+                  <span key={item} className="pill">
                     {item}
-                  </li>
+                  </span>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>
