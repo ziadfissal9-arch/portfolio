@@ -1,4 +1,4 @@
-import { Download, Mail, Phone } from "lucide-react";
+import { Mail, Phone, MapPin, Download } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/BrandIcons";
 
 const EMAIL = "ziadfissal9@gmail.com";
@@ -8,62 +8,81 @@ export default function Contact() {
   const year = new Date().getFullYear();
 
   return (
-    <section id="contact" className="border-t border-[var(--line)] py-20 sm:py-24">
-      <div className="container">
-        <div className="card flex flex-col items-start gap-8 p-8 sm:flex-row sm:items-center sm:justify-between sm:p-12">
-          <div>
-            <p className="eyebrow mb-4">Contact</p>
-            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-              Let&apos;s work together.
-            </h2>
-            <p className="mt-3 max-w-[440px] text-[15px] text-[var(--ink-soft)]">
-              Have a project in mind or an open role? I&apos;m available for
-              freelance, contract, and junior front-end opportunities.
+    <footer
+      id="contact"
+      className="border-t"
+      style={{ borderColor: "var(--line)", background: "var(--bg-soft)" }}
+    >
+      <div className="container py-20 sm:py-24">
+        <p className="eyebrow">Contact</p>
+        <h2 className="section-heading mt-4 max-w-[560px]">
+          Open to full-stack and front-end roles, and to freelance work.
+        </h2>
+
+        <div className="mt-10 grid gap-10 sm:grid-cols-[1fr_auto] sm:items-end">
+          <div className="space-y-3.5">
+            <a
+              href={`mailto:${EMAIL}`}
+              className="link text-[15px]"
+              style={{ color: "var(--ink)" }}
+            >
+              <Mail size={15} />
+              {EMAIL}
+            </a>
+            <a
+              href={`tel:${PHONE.replace(/\s/g, "")}`}
+              className="link text-[15px]"
+            >
+              <Phone size={15} />
+              {PHONE}
+            </a>
+            <p
+              className="flex items-center gap-1.5 text-[15px]"
+              style={{ color: "var(--ink-soft)" }}
+            >
+              <MapPin size={15} />
+              Damietta, Egypt
             </p>
           </div>
 
-          <div className="flex flex-col gap-3 sm:items-end">
-            <a href={`mailto:${EMAIL}`} className="btn btn-primary w-full justify-center sm:w-auto">
-              <Mail size={16} />
-              {EMAIL}
+          <div className="flex flex-wrap gap-2.5">
+            <a
+              href="https://github.com/ziadfissal9-arch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost"
+            >
+              <GithubIcon size={15} />
+              GitHub
             </a>
-            <a href={`tel:${PHONE.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 text-[14px] font-medium text-[var(--ink-soft)]">
-              <Phone size={14} />
-              {PHONE}
+            <a
+              href="https://www.linkedin.com/in/ziad-fissal-2a4530365"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-ghost"
+            >
+              <LinkedinIcon size={15} />
+              LinkedIn
             </a>
-            <div className="mt-1 flex w-full gap-3 sm:w-auto">
-              <a
-                href="https://github.com/ziadfissal9-arch"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="btn btn-outline flex-1 justify-center sm:flex-none"
-              >
-                <GithubIcon size={16} />
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ziad-fissal-2a4530365"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="btn btn-outline flex-1 justify-center sm:flex-none"
-              >
-                <LinkedinIcon size={16} />
-                LinkedIn
-              </a>
-            </div>
+            <a
+              href="/cv/Ziad-Fissal-CV.pdf"
+              download
+              className="btn btn-primary"
+            >
+              <Download size={15} />
+              Download CV
+            </a>
           </div>
         </div>
-      </div>
 
-      <div className="container mt-10 flex flex-col items-center gap-4 border-t border-[var(--line)] pt-8 text-[13px] text-[var(--ink-mute)] sm:flex-row sm:justify-between">
-        <span>&copy; {year} Ziad Fissal. All rights reserved.</span>
-        <a href="/cv/Ziad-Fissal-CV.pdf" download className="link-underline inline-flex items-center gap-1.5 font-medium text-[var(--ink)]">
-          <Download size={14} />
-          Download CV
-        </a>
+        <div
+          className="mono mt-16 flex flex-col gap-2 border-t pt-6 text-[12px] sm:flex-row sm:items-center sm:justify-between"
+          style={{ borderColor: "var(--line)", color: "var(--ink-mute)" }}
+        >
+          <span>© {year} Ziad Fissal</span>
+          <span>Built with Next.js · Deployed on Vercel</span>
+        </div>
       </div>
-    </section>
+    </footer>
   );
 }

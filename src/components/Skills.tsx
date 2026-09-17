@@ -7,22 +7,28 @@ export default function Skills() {
   const ref = useReveal<HTMLDivElement>();
 
   return (
-    <section id="skills" className="border-t border-[var(--line)] py-20 sm:py-24">
+    <section id="skills" className="py-20 sm:py-28">
       <div className="container">
-        <p className="eyebrow mb-4">Skills</p>
-        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-          Technical skills
-        </h2>
+        <p className="eyebrow">Stack</p>
+        <h2 className="section-heading mt-4">What I work with.</h2>
+        <div className="rule mt-8" />
 
-        <div ref={ref} className="reveal mt-10 flex flex-col gap-4">
+        <div ref={ref} className="reveal mt-12 divide-y" style={{ borderColor: "var(--line)" }}>
           {skillGroups.map((group) => (
-            <div key={group.label} className="flex flex-col gap-2 border-b border-[var(--line)] pb-4 last:border-b-0 sm:flex-row sm:items-center sm:gap-6">
-              <span className="w-[110px] shrink-0 text-[13px] font-semibold text-[var(--ink-soft)]">
+            <div
+              key={group.label}
+              className="grid gap-3 border-t py-5 sm:grid-cols-[180px_1fr] sm:gap-8 sm:py-6"
+              style={{ borderColor: "var(--line)" }}
+            >
+              <h3
+                className="mono text-[12.5px] tracking-wide"
+                style={{ color: "var(--ink-mute)" }}
+              >
                 {group.label}
-              </span>
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {group.items.map((item) => (
-                  <span key={item} className="pill">
+                  <span key={item} className="chip">
                     {item}
                   </span>
                 ))}

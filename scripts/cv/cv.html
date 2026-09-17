@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Ziad Fissal — CV</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #1e293b;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 7mm 16mm 3mm;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #111827;
+    padding-bottom: 10px;
+  }
+  .name {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 0;
+    color: #0f172a;
+  }
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin: 5px 0 0;
+  }
+  .social {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #111827;
+    font-weight: 600;
+  }
+  .social a { color: #111827; text-decoration: none; }
+  .meta { text-align: right; font-size: 11.5px; color: #334155; line-height: 2; }
+
+  .section { margin-top: 9px; }
+  .section-title {
+    font-size: 11.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #111827;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+  }
+  .profile { font-size: 12.3px; line-height: 1.5; margin: 0; color: #334155; }
+
+  .skills-grid { display: grid; grid-template-columns: 110px 1fr; row-gap: 5px; align-items: baseline; }
+  .skills-grid .label { font-size: 12px; font-weight: 700; color: #0f172a; }
+  .skills-grid .items { font-size: 12px; color: #334155; }
+
+  .project { margin-top: 6px; }
+  .project:first-child { margin-top: 0; }
+  .project-row { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .project-name { font-size: 13.5px; font-weight: 700; color: #0f172a; }
+  .project-tagline { font-size: 11.5px; color: #64748b; font-weight: 400; }
+  .project-links { font-size: 11px; font-weight: 700; white-space: nowrap; color: #111827; text-decoration: underline; }
+  .project ul { margin: 3px 0 0; padding-left: 16px; font-size: 11.5px; line-height: 1.34; color: #334155; }
+  .project li { margin-bottom: 1px; }
+  .tech-stack { font-size: 11.3px; margin-top: 3px; color: #0f172a; }
+  .tech-stack b { font-weight: 700; }
+  .tech-stack span { color: #374151; font-weight: 600; }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .edu-item h4, .cert-item h4 { font-size: 12.5px; font-weight: 700; margin: 0; color: #0f172a; }
+  .edu-item p, .cert-item p { font-size: 11.5px; color: #64748b; margin: 3px 0 0; }
+  .lang-row { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px; }
+  .lang-row span:first-child { font-weight: 600; color: #0f172a; }
+  .lang-row span:last-child { color: #64748b; }
+
+  .footer-note {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: #111827;
+  }
+  .project-links a { color: inherit; text-decoration: underline; }
+  .social a { color: #111827; text-decoration: none; }
+  .ic { width: 10.5px; height: 10.5px; vertical-align: -1.3px; }
+  .social { line-height: 1.5; }
+  .social .ic { margin-right: 4px; }
+  .meta .ic { margin-right: 5px; opacity: 0.7; }
+  .project-links { line-height: 1.4; }
+  .project-links .ic { width: 9.5px; height: 9.5px; vertical-align: -1px; margin-right: 3px; }
+  .job-date { font-size: 11px; font-weight: 700; white-space: nowrap; color: #111827; }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <div>
+        <p class="name">Ziad Fissal</p>
+        <p class="title">Full-Stack Developer | React, Next.js &amp; Node.js</p>
+        <p class="social"><a href="https://ziad-fissal.vercel.app"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18Z"/></svg>ziad-fissal.vercel.app</a>  |  <a href="https://github.com/ziadfissal9-arch"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.2.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>github.com/ziadfissal9-arch</a>  |  <a href="https://www.linkedin.com/in/ziad-fissal-2a4530365"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45Z"/></svg>LinkedIn</a></p>
+      </div>
+      <div class="meta">
+        <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>ziadfissal9@gmail.com</div>
+        <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h3L11 7 9 8.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2Z"/></svg>+20 115 728 5971</div>
+        <div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>Damietta, Egypt</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="profile">
+        Computer Science graduate and Full-Stack Developer with six months of freelance experience
+        delivering client websites end to end. Builds production applications with React, Next.js and Node.js -
+        real JWT + bcrypt authentication, a real PostgreSQL or MongoDB database, and server-side logic that
+        validates and recomputes data instead of trusting the client. Owns features from schema and REST API
+        through typed React UI, tests and deployment.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="label">Languages</div>
+        <div class="items">TypeScript, JavaScript (ES6+), HTML5, CSS3, SQL</div>
+        <div class="label">Front End</div>
+        <div class="items">React 19, Next.js 16 (App Router), React Router, Redux Toolkit, Context API</div>
+        <div class="label">Back End</div>
+        <div class="items">Node.js, Express 5, REST API design, JWT &amp; bcrypt auth, role-based access</div>
+        <div class="label">Databases</div>
+        <div class="items">PostgreSQL (Drizzle ORM), MongoDB (Mongoose), schema &amp; data modelling</div>
+        <div class="label">Styling</div>
+        <div class="items">Tailwind CSS, Sass, CSS Modules, Bootstrap, Responsive &amp; RTL design</div>
+        <div class="label">Testing &amp; Tools</div>
+        <div class="items">Vitest, Testing Library, Git &amp; GitHub, Vite, Vercel, serverless deployment</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Experience</div>
+
+      <div class="project">
+        <div class="project-row">
+          <span class="project-name">Freelance Web Developer <span class="project-tagline">/ Self-employed, Remote</span></span>
+          <span class="job-date">Sep 2025 - Feb 2026</span>
+        </div>
+        <ul>
+          <li>Delivered 5 client websites end to end - business sites, landing pages and an online store - from the initial brief through build, deployment and handover.</li>
+          <li>Built responsive, mobile-first interfaces with React and Next.js, including Arabic (RTL) layouts alongside English.</li>
+          <li>Worked directly with non-technical clients to turn informal briefs into clear scope, and shipped on the agreed deadline.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Selected Projects</div>
+
+      <div class="project">
+        <div class="project-row">
+          <span class="project-name">Dar Al-Asalah <span class="project-tagline">/ Arabic (RTL) E-Commerce Store</span></span>
+          <span class="project-links"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><a href="https://dar-al-asalah.vercel.app">Live Demo</a> | <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.2.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg><a href="https://github.com/ziadfissal9-arch/dar-al-asalah">Code</a></span>
+        </div>
+        <ul>
+          <li>Shipped an Arabic RTL storefront end to end - Express 5 REST API, MongoDB/Mongoose models, JWT + bcrypt auth, and a typed React 19 front end.</li>
+          <li>Built a checkout that recomputes order totals server-side, blocking client-side price tampering, plus a role-gated admin dashboard for products and orders.</li>
+        </ul>
+        <div class="tech-stack"><b>Tech Stack:</b> <span>React | TypeScript | Node.js/Express | MongoDB | JWT</span></div>
+      </div>
+
+      <div class="project">
+        <div class="project-row">
+          <span class="project-name">Auratech Store <span class="project-tagline">/ Premium E-Commerce Storefront</span></span>
+          <span class="project-links"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><a href="https://auratech-store.vercel.app">Live Demo</a> | <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.2.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg><a href="https://github.com/ziadfissal9-arch/auratech-store">Code</a></span>
+        </div>
+        <ul>
+          <li>Built a Postgres-backed storefront on a Drizzle ORM schema, served through serverless API functions with httpOnly-cookie JWT sessions.</li>
+          <li>Added server-resolved search, filtering and sorting, a persistent cart and route code splitting; covered by a Vitest suite.</li>
+        </ul>
+        <div class="tech-stack"><b>Tech Stack:</b> <span>React 19 | TypeScript | PostgreSQL | Drizzle | Vitest</span></div>
+      </div>
+
+      <div class="project">
+        <div class="project-row">
+          <span class="project-name">NexaCommerce <span class="project-tagline">/ Full-Stack MERN Marketplace</span></span>
+          <span class="project-links"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><a href="https://nexacommerce-alpha.vercel.app">Live Demo</a> | <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.2.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg><a href="https://github.com/ziadfissal9-arch/NexaCommerce">Code</a></span>
+        </div>
+        <ul>
+          <li>Built a marketplace as a TypeScript monorepo - Next.js 16 storefront, Express REST API and MongoDB Atlas - on Vercel Functions.</li>
+          <li>Hardened it for production with rate limiting, security headers and CORS, verified by dedicated security test suites.</li>
+        </ul>
+        <div class="tech-stack"><b>Tech Stack:</b> <span>Next.js | Node.js | Express | MongoDB Atlas | Redux Toolkit</span></div>
+      </div>
+
+      <div class="project">
+        <div class="project-row">
+          <span class="project-name">IndustryOS <span class="project-tagline">/ Real-Time Analytics Dashboard</span></span>
+          <span class="project-links"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg><a href="https://industryos-dashboard.vercel.app">Live Demo</a> | <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.2.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg><a href="https://github.com/ziadfissal9-arch/industryos-dashboard">Code</a></span>
+        </div>
+        <ul>
+          <li>Built an 8-view operations dashboard with searchable, filterable tables and stateful actions such as alert acknowledgement.</li>
+          <li>Visualised operational KPIs through interactive area, radar, bar and donut charts, with code-split routes.</li>
+        </ul>
+        <div class="tech-stack"><b>Tech Stack:</b> <span>React | Recharts | React Router | Vite</span></div>
+      </div>
+
+    </div>
+
+    <div class="section grid-2">
+      <div>
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+          <h4>B.Sc. in Computer Science</h4>
+          <p>Sinai University | Graduated 2026</p>
+        </div>
+        <div class="section-title" style="margin-top:7px;">Certifications</div>
+        <div class="cert-item">
+          <h4>Front-End Web Development (HTML, CSS, JavaScript)</h4>
+          <p>Information Technology Institute (ITI) | May 2025</p>
+        </div>
+      </div>
+      <div>
+        <div class="section-title">Languages</div>
+        <div class="lang-row"><span>Arabic</span><span>Native</span></div>
+        <div class="lang-row"><span>English</span><span>B2 - Upper Intermediate</span></div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Open to Full-Stack and Front-End Developer roles.
+    </div>
+
+  </div>
+</body>
+</html>

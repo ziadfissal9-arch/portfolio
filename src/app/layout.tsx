@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ziad-fissal.vercel.app"),
-  title: "Ziad Fissal — Front-End Developer",
+  title: "Ziad Fissal — Full-Stack Developer",
   description:
-    "Front-End Developer building responsive, modern web applications with React, Next.js and TypeScript. Available for freelance work.",
+    "Full-stack developer building web applications with React, Next.js and Node.js — real databases, real authentication, and real server-side logic. Available for new projects.",
   openGraph: {
-    title: "Ziad Fissal — Front-End Developer",
+    title: "Ziad Fissal — Full-Stack Developer",
     description:
-      "Front-End Developer building responsive, modern web applications with React, Next.js and TypeScript.",
+      "Full-stack developer building web applications with React, Next.js and Node.js — real databases, real authentication, and real server-side logic.",
     type: "website",
   },
 };
