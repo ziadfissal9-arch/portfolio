@@ -85,13 +85,13 @@ export const projects: Project[] = [
 
 export const roles: Role[] = [
   {
-    title: "Freelance Web Developer",
-    org: "Self-employed · Remote",
-    period: "Sep 2025 — Feb 2026",
+    title: "Independent Full-Stack Developer",
+    org: "Self-directed projects · Remote",
+    period: "Sep 2025 — Present",
     points: [
-      "Delivered 5 client websites end to end — business sites, landing pages and an online store — from the initial brief through build, deployment and handover.",
+      "Designed, built and deployed 5 full-stack web applications end to end — three storefronts, an analytics dashboard and a marketing site — from planning through deployment.",
       "Built responsive, mobile-first interfaces with React and Next.js, including Arabic (RTL) layouts alongside English.",
-      "Worked directly with non-technical clients to turn informal briefs into clear scope, and shipped on the agreed deadline.",
+      "Applied production practices throughout: server-side validation, JWT auth with role-based access, rate limiting, security headers and automated tests.",
     ],
   },
 ];

@@ -14,7 +14,7 @@ export default function Experience() {
     >
       <div className="container">
         <p className="eyebrow">Experience</p>
-        <h2 className="section-heading mt-4">Where I&apos;ve worked.</h2>
+        <h2 className="section-heading mt-4">What I&apos;ve been building.</h2>
         <div className="rule mt-8" />
 
         <div ref={ref} className="reveal mt-12 grid gap-12 lg:grid-cols-[1.4fr_1fr] lg:gap-20">
