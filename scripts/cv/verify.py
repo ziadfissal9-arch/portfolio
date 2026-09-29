@@ -13,14 +13,14 @@ EXPECTED = {
     "portfolio":            "https://ziad-fissal.vercel.app/",
     "github profile":       "https://github.com/ziadfissal9-arch",
     "linkedin":             "https://www.linkedin.com/in/ziad-fissal-2a4530365",
+    "bannaa demo":          "https://bannaa-rho.vercel.app/",
+    "bannaa code":          "https://github.com/ziadfissal9-arch/bannaa",
     "dar-al-asalah demo":   "https://dar-al-asalah.vercel.app/",
     "dar-al-asalah code":   "https://github.com/ziadfissal9-arch/dar-al-asalah",
     "auratech demo":        "https://auratech-store.vercel.app/",
     "auratech code":        "https://github.com/ziadfissal9-arch/auratech-store",
     "nexacommerce demo":    "https://nexacommerce-alpha.vercel.app/",
     "nexacommerce code":    "https://github.com/ziadfissal9-arch/NexaCommerce",
-    "industryos demo":      "https://industryos-dashboard.vercel.app/",
-    "industryos code":      "https://github.com/ziadfissal9-arch/industryos-dashboard",
 }
 
 MIN_W, MIN_H = 12.0, 6.0  # a clickable area smaller than this is effectively dead

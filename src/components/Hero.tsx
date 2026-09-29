@@ -33,7 +33,7 @@ export default function Hero() {
             >
               I build web applications that hold up in production — real
               databases, real authentication, and server-side logic that
-              validates what it is sent instead of trusting the client. Five are
+              validates what it is sent instead of trusting the client. Six are
               deployed and open source; the code is there to read.
             </p>
 

@@ -12,6 +12,7 @@ OUT = os.path.join(ROOT, "public", "images", "projects")
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 
 SITES = {
+    "bannaa": "https://bannaa-rho.vercel.app",
     "dar-al-asalah": "https://dar-al-asalah.vercel.app",
     "nexacommerce": "https://nexacommerce-alpha.vercel.app",
     "industryos": "https://industryos-dashboard.vercel.app",

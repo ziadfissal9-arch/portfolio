@@ -2,6 +2,22 @@ import type { Project, Role, SkillGroup } from "./types";
 
 export const projects: Project[] = [
   {
+    slug: "bannaa",
+    name: "Bannaa (بنّاء)",
+    tagline: "Arabic marketplace for building-materials stores and technicians",
+    summary:
+      "A full-stack Arabic (RTL) directory for Saudi cities: customers search, compare ratings and send service requests; business owners manage listings, photos and requests from their own dashboard; admins review listings and manage cities and categories. Live demo with one-click admin and owner logins.",
+    highlights: [
+      "Server-side access control on every page and server action: owners can only touch their own listings, photos and requests, proven by 81 integration tests against real Postgres.",
+      "Photo uploads to Vercel Blob validated by file signature, in-app notifications, Google Maps, and password reset with single-use hashed tokens that revoke old sessions.",
+      "Rate limits for logins, requests and reviews, plus SEO: sitemap, Open Graph and schema.org ratings.",
+    ],
+    tech: ["Next.js 16", "TypeScript", "PostgreSQL", "Drizzle", "Tailwind", "Vitest"],
+    image: "/images/projects/bannaa.webp",
+    liveUrl: "https://bannaa-rho.vercel.app",
+    repoUrl: "https://github.com/ziadfissal9-arch/bannaa",
+  },
+  {
     slug: "dar-al-asalah",
     name: "Dar Al-Asalah",
     tagline: "Arabic (RTL) storefront for coffee, oud and perfume",
@@ -89,7 +105,7 @@ export const roles: Role[] = [
     org: "Self-directed projects · Remote",
     period: "Sep 2025 — Present",
     points: [
-      "Designed, built and deployed 5 full-stack web applications end to end — three storefronts, an analytics dashboard and a marketing site — from planning through deployment.",
+      "Designed, built and deployed 6 web applications end to end — an Arabic services marketplace, three storefronts, an analytics dashboard and a marketing site — from planning through deployment.",
       "Built responsive, mobile-first interfaces with React and Next.js, including Arabic (RTL) layouts alongside English.",
       "Applied production practices throughout: server-side validation, JWT auth with role-based access, rate limiting, security headers and automated tests.",
     ],

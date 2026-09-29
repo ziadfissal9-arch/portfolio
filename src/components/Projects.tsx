@@ -111,7 +111,7 @@ export default function Projects() {
       <div className="container">
         <p className="eyebrow">Selected work</p>
         <h2 className="section-heading mt-4 max-w-[620px]">
-          Five applications, deployed and open source.
+          Six applications, deployed and open source.
         </h2>
         <div className="rule mt-8" />
 
